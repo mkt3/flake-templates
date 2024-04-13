@@ -13,7 +13,7 @@
       {
         devShell = pkgs.mkShell {
           buildInputs = [
-            # pkgs.python312Full
+            pkgs.python312Full
             # pkgs.
           ];
         };
