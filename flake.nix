@@ -6,6 +6,10 @@
         path = ./python;
         description = "Python project";
       };
+      minimal = {
+        path = ./minimal;
+        description = "Minimal project";
+      };
     };
   };
 }
