@@ -13,7 +13,6 @@
     flake-utils.lib.eachDefaultSystem (
       system:
       let
-        inherit (nixpkgs.lib) optional;
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
