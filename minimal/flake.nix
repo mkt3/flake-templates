@@ -1,11 +1,7 @@
 {
   inputs = {
-    nixpkgs = {
-      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    };
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs =
@@ -20,9 +16,14 @@
       in
       {
         devShell = pkgs.mkShell {
-          buildInputs = [
-            # pkgs.xxx
+          packages = with pkgs; [
+            # xxx
           ];
+
+          shellHook = ''
+            $SHELL
+          '';
+
         };
       }
     );
