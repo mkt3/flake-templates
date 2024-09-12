@@ -19,11 +19,6 @@
           packages = with pkgs; [
             # xxx
           ];
-
-          shellHook = ''
-            $SHELL
-          '';
-
         };
       }
     );
