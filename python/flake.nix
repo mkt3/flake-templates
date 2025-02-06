@@ -19,10 +19,6 @@
           packages = with pkgs; [
             python312Full
           ];
-
-          shellHook = ''
-            $SHELL
-          '';
         };
       }
     );
