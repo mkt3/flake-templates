@@ -16,9 +16,11 @@
       in
       {
         devShell = pkgs.mkShell {
-          packages = with pkgs; [
+          buildInputs = [
             # xxx
           ];
+
+          shellHook = '''';
         };
       }
     );
