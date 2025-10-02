@@ -17,7 +17,7 @@
       {
         devShell = pkgs.mkShell {
           packages = with pkgs; [
-            python312Full
+            python312
           ];
         };
       }
