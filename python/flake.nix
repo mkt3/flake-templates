@@ -13,19 +13,18 @@
           inherit system;
           config.allowUnfree = true;
         };
+
+        python = pkgs.python312;
       in
       {
         devShell = pkgs.mkShell {
           packages = [
-            pkgs.python313
+            python
           ];
 
           env = {
-            UV_PYTHON = "${pkgs.python313}/bin/python";
+            UV_PYTHON = "${python}/bin/python";
           };
-
-          shellHook = '''';
-
         };
       }
     );
