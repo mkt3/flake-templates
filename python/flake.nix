@@ -16,13 +16,16 @@
       in
       {
         devShell = pkgs.mkShell {
-          buildInputs = [
+          packages = [
             pkgs.python313
           ];
 
-          shellHook = ''
-            export UV_PYTHON=${pkgs.python313}/bin/python
-          '';
+          env = {
+            UV_PYTHON = "${pkgs.python313}/bin/python";
+          };
+
+          shellHook = '''';
+
         };
       }
     );
