@@ -22,9 +22,7 @@
             python
           ];
 
-          env = {
-            UV_PYTHON = "${python}/bin/python";
-          };
+          UV_PYTHON = "${python}/bin/python";
         };
       }
     );
